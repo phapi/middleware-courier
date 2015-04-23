@@ -3,6 +3,9 @@ Courier is a HTTP Middleware responsible for sending a response to the client. T
 
 No configuration is needed for this middleware just populate the response object and Courier will send the headers and body.
 
+## Phapi
+This middleware is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi). The middleware are also [PSR-7](https://github.com/php-fig/http-message) compliant and implements the [Phapi Middleware Contract](https://github.com/phapi/contract).
+
 ## License
 Courier Middleware is licensed under the MIT License - see the [license.md](https://github.com/phapi/middleware-courier/blob/master/license.md) file for details
 
