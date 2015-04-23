@@ -27,7 +27,11 @@
   },
   "autoload": {
     "psr-4": {
-      "Phapi\\Middleware\\Courier\\": "src/Phapi/Middleware/Courier/",
+      "Phapi\\Middleware\\Courier\\": "src/Phapi/Middleware/Courier/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
       "Phapi\\Tests\\Middleware\\Courier\\": "tests/Phapi/Middleware/"
     }
   }
