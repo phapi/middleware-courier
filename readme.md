@@ -1,6 +1,14 @@
 # Courier Middleware
 Courier is a HTTP Middleware responsible for sending a response to the client. The middleware relies on PSR-7 compatible request and response objects.
 
+## Installation
+This middleware is by default included in the [Phapi Framework](https://github.com/phapi/phapi) but if you need to install it it's available to install via [Packagist](https://packagist.org) and [Composer](https://getcomposer.org).
+
+```shell
+$ php composer.phar require phapi/middleware-courier:1.*
+```
+
+## Configuration
 No configuration is needed for this middleware just populate the response object and Courier will send the headers and body.
 
 ## Phapi
