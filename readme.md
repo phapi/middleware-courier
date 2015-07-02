@@ -9,7 +9,9 @@ $ php composer.phar require phapi/middleware-courier:1.*
 ```
 
 ## Configuration
-No configuration is needed for this middleware.
+The middleware itself does not have any configuration options.
+
+See the [configuration documentation](http://phapi.github.io/started/configuration/) for more information about how to configure the integration with the Phapi Framework.
 
 ## Usage
 Populate the response object and Courier take care of sending the headers and body.
