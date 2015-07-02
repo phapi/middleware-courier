@@ -17,7 +17,8 @@ use Psr\Http\Message\ResponseInterface;
  * @license  MIT (http://opensource.org/licenses/MIT)
  * @link     https://github.com/phapi/middleware-courier
  */
-class Courier implements Middleware {
+class Courier implements Middleware
+{
 
     /**
      * Output buffer level
