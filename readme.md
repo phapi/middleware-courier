@@ -1,4 +1,9 @@
 # Courier Middleware
+
+[![Build status](https://img.shields.io/travis/phapi/middleware-courier.svg?style=flat-square)](https://travis-ci.org/phapi/middleware-courier)
+[![Code Climate](https://img.shields.io/codeclimate/github/phapi/middleware-courier.svg?style=flat-square)](https://codeclimate.com/github/phapi/middleware-courier)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/phapi/middleware-courier.svg?style=flat-square)](https://codeclimate.com/github/phapi/middleware-courier/coverage)
+
 Courier is a HTTP Middleware responsible for sending a response to the client. The middleware relies on PSR-7 compatible request and response objects.
 
 ## Installation
