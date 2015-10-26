@@ -47,6 +47,7 @@ class CourierTest extends TestCase {
         $response->shouldReceive('getProtocolVersion')->andReturn('1.1');
 
         $courier = new Courier();
+        $this->expectOutputString('this is the body');
         $courier($request, $response, function ($request, $response) {
             return $response;
         });
@@ -54,7 +55,6 @@ class CourierTest extends TestCase {
         $this->assertContains('HTTP/1.1 200 Ok', Output::$headers);
         $this->assertContains('X-Foo: Bar', Output::$headers);
         $this->assertContains('X-Rate-Limit-Remaining: 11', Output::$headers);
-        $this->assertEquals('this is the body', Output::$body);
     }
 
     /**
@@ -79,6 +79,7 @@ class CourierTest extends TestCase {
         $response->shouldReceive('getProtocolVersion')->andReturn('1.1');
 
         $courier = new Courier();
+        $this->expectOutputString('this is the body');
         $courier($request, $response, function ($request, $response) {
             return $response;
         });
@@ -86,6 +87,5 @@ class CourierTest extends TestCase {
         $this->assertContains('HTTP/1.1 200', Output::$headers);
         $this->assertContains('X-Foo: Bar', Output::$headers);
         $this->assertContains('X-Rate-Limit-Remaining: 11', Output::$headers);
-        $this->assertEquals('this is the body', Output::$body);
     }
 }

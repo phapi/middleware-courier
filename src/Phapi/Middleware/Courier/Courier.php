@@ -84,7 +84,7 @@ class Courier implements Middleware
         // Make sure it wasn't a HEAD request
         if ($request->getMethod() !== 'HEAD') {
             // Send the body to the client by echoing it
-            printf($response->getBody());
+            echo $response->getBody();
         }
     }
 
