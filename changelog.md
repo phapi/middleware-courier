@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.2] - 2015-12-28
+### Fixed
+- In some rare cases an infinite loop occurred while flushing content
+
 ## [1.0.1] - 2015-10-26
 ### Fixed
 - Bug, some types of content would result in an exception during echoing the content to the client

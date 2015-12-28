@@ -73,9 +73,12 @@ class Courier implements Middleware
             $this->sendHeaders($response);
         }
 
-        // Flush (send) the buffer that contains output that the application has generated
-        while (ob_get_level() >= $this->outputBufferLevel) {
-            ob_end_flush();
+        // Check if we have any content to flush
+        if (ob_get_level() > 1) {
+            // Flush (send) the buffer that contains output that the application has generated
+            while (ob_get_level() >= $this->outputBufferLevel) {
+                ob_end_flush();
+            }
         }
 
         // Set buffer level to null
